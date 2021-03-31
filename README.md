@@ -10,3 +10,5 @@ Both of the models uses 'bert-base-uncased' from the huggingface library to retr
 The 'pool' mode a 2\*2 pooling layer is inserted to halve the amount of parameters. After such processings the embeddings in the shape of (batch_size,max_length,768) is fed to a shallow neural network with a single lstm layer for the sentiment analysis task.  
 
 ## Results.
+![lstm_basic_result >](https://github.com/ampehta/BertPooled/blob/main/images/lstm_basic_result.png)
+![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_result.png)
