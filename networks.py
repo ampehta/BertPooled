@@ -15,4 +15,4 @@ def report_accuracy_and_time(train_X,train_y,test_X,test_y,bert,tokenizer,config
     output = model.evaluate(dataloader_test,return_dict=True)
     spent_time = (time.perf_counter() - start_time)/60
     print('##############################')
-    print(f"Time Spent: {spent_time} minutes\nAccuracy :{output['accuracy']}\nTotal Parameters :{model.count_params}")
+    print(f"Time Spent: {spent_time} minutes\nAccuracy :{output['accuracy']}\nTotal Parameters :{model.count_params()}")
