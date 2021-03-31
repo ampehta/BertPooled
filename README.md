@@ -1,3 +1,5 @@
 # BertPooled. 
-'BertPooled'is a simple project that reduces the computation burden of a BERT by simply addding a pooling layer.  
-The concept comes from a basic assumption that if pooling layers actually can function to reduce the size of a matrix without loosing part of its data, could it be equally applicable to BERT to reduce the size of its hidden state while maintaining its performance
+This mini project *BertPooled* aims to reduce the computing burden of language models by simply adding a pooling layer.    
+  
+Though it would have been best if I pretrained a Language Model with Pooling Layers from scratch to proove whether such attempts are meaningful.
+Due to realistic problems I had to settle by confirming that additional researchs may be worthwile after conducting few experiments with the concept.
