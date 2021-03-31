@@ -10,7 +10,7 @@ Both of the models uses 'bert-base-uncased' from the huggingface library to retr
 The 'pool' mode a 2\*2 pooling layer is inserted to halve the amount of parameters. After such processings the embeddings in the shape of (batch_size,max_length,768) is fed to a shallow neural network with a single lstm layer for the sentiment analysis task.  
 
 ## Results.  
-As shown below the 'lstm_basic' model *(the one without the pooling layer)* performs slightly better than the 'pool' model *(the one with the pooling layer)*.  
-On the other hand, the 'pool' model calculates faster
-![lstm_basic_result >](https://github.com/ampehta/BertPooled/blob/main/images/lstm_basic_result.png)
-![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_result.png)
+As shown below the 'lstm_basic' model *(the one without the pooling layer)* performs slightly better than the 'pool' model *(the one with the pooling layer)* while the 'pool' model calculates faster. As experimented, it seems that the pooling layer does not result in much performance difference for simple tasks performed in small models.  
+For the moment, it seems impossible to experiment with a larger model in a more complex task due to the limitations of my computer. However if possible, I am willing to proceed my project for further verfications of the idea.
+![lstm_basic_result >](https://github.com/ampehta/BertPooled/blob/main/images/basic_lstm_v1.png)
+![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_v2.png)
