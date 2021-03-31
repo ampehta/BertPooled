@@ -13,4 +13,4 @@ The 'pool' mode a 2\*2 pooling layer is inserted to halve the amount of paramete
 As shown below the 'lstm_basic' model *(the one without the pooling layer)* performs slightly better than the 'pool' model *(the one with the pooling layer)* while the 'pool' model calculates faster. As experimented, it seems that the pooling layer does not result in much performance difference for simple tasks performed in small models.  
 For the moment, it seems impossible to experiment with a larger model in a more complex task due to the limitations of my computer. However if possible, I am willing to proceed my project for further verfications of the idea.
 ![lstm_basic_result >](https://github.com/ampehta/BertPooled/blob/main/images/basic_lstm_v1.png)
-![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_v2.png)
+![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_v1.png)
