@@ -9,6 +9,8 @@ Though it would have been best if I pretrained a Language Model with Pooling Lay
 Both of the models uses 'bert-base-uncased' from the huggingface library to retrieve word embeddings.  
 The 'pool' mode a 2\*2 pooling layer is inserted to halve the amount of parameters. After such processings the embeddings in the shape of (batch_size,max_length,768) is fed to a shallow neural network with a single lstm layer for the sentiment analysis task.  
 
-## Results.
+## Results.  
+As shown below the 'lstm_basic' model *(the one without the pooling layer)* performs slightly better than the 'pool' model *(the one with the pooling layer)*.  
+On the other hand, the 'pool' model calculates faster
 ![lstm_basic_result >](https://github.com/ampehta/BertPooled/blob/main/images/lstm_basic_result.png)
 ![pool_result <](https://github.com/ampehta/BertPooled/blob/main/images/pool_result.png)
